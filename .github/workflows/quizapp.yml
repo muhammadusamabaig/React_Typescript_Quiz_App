@@ -37,7 +37,7 @@ jobs:
     - name: run build
       run: npm run build
     - name: list
-      run: ls -a
+      run: cd build && ls -a
      
     
     - name: install surge
