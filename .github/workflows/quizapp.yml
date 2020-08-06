@@ -38,4 +38,4 @@ jobs:
 
 
     - name: deploy on surge
-      run: surge ./build http://quiztestapp.surge.sh/ --token ${{secrets.quizwebsecrete}}
+      run: surge ./build http://quiztestapp.surge.sh/ --token ${{secrets.quiz}}
