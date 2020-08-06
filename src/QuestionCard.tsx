@@ -84,7 +84,7 @@ return (
       arra[index].options.map((item,index)=>{
         return( <div key={index} className="row " style={{borderRadius:"14%"}}>
         <h6 className="col-12 "  style={{backgroundColor:"#E334C0",marginLeft:"1%",paddingTop:"2%",paddingBottom:"2%" ,color:"white"}}>
-          <input  disabled={mcqsendsate} checked={false}  onChange={()=>{console.log(QuestionIncrement() ,Detection(item) )}}  type="radio"/> {item}
+          <input   disabled={mcqsendsate} checked={false}  onChange={()=>{console.log(QuestionIncrement() ,Detection(item) )}}  type="radio"/> {item}
           </h6>
       </div>)
        
