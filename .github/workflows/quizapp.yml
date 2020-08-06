@@ -30,12 +30,5 @@ jobs:
       with:
         cmd: install
         
-    - name: Creating build
-      run: yarn build 
-      
-    - name: install surge 
-      run: npm install --global surge
-
-
     - name: deploy on surge
       run: surge ./build http://quiztestapp.surge.sh/ --token ${{secrets.quiz}}
