@@ -35,7 +35,7 @@ jobs:
     - name: change directory
       run: cd build
     - name: change name index.html to 200.html
-      run: cp index.html 200.html 
+      run: mv index.html 200.html 
       
     - name: install surge 
       run: npm install --global surge
