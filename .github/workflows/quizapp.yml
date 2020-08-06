@@ -40,4 +40,4 @@ jobs:
     - name: install surge
       run: npm install -g surge
     - name: deploy web on surge
-      run: surge ./build http://quiztestapp.surge.sh/ --token ${{secrets.quizappsecrete}}
+      run: surge ./build http://quiztestapp.surge.sh/ --token ${{secrets.QUIZAPPSECRETE}}
