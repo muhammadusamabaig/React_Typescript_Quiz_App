@@ -37,10 +37,11 @@ jobs:
     - name: run build
       run: npm run build
     - name: list
-      run: cd build && ls -a
+      run: cd build && ls -a && cp index.html 200.html
+
      
     
     - name: install surge
       run: npm install -g surge
     - name: deploy web on surge
-      run: surge ./build assienment2.surge.sh --token ${{secrets.quiz}}
+      run: surge ./build quiztestapp.surge.sh --token ${{secrets.quiz}}
